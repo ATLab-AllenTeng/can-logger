@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "usb-can-logger"
+version = "0.1.0"
+description = "Windows ControlCAN USB-CAN hourly CSV logger"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [{name = "USB-CAN Logger Contributors"}]
+dependencies = []
+
+[project.scripts]
+usb-can-logger = "main:main"
+
+[tool.setuptools]
+packages = ["src"]
+py-modules = ["main"]
+
+[tool.unittest]
+start-directory = "tests"

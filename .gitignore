@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Test and tooling artefacts
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# Runtime output
+logs/*.csv
+!logs/.gitkeep
+
+# Vendor-provided binary drivers
+# Do not commit proprietary DLLs or their dependency files.
+drivers/*.dll
+drivers/kerneldlls/*
+!drivers/.gitkeep
+!drivers/kerneldlls/.gitkeep
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
