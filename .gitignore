@@ -15,9 +15,9 @@ htmlcov/
 logs/*.csv
 !logs/.gitkeep
 
-# Vendor-provided binary drivers
-# Do not commit proprietary DLLs or their dependency files.
-drivers/*.dll
+# Validated application driver
+# ControlCAN.dll is intentionally versioned with this project.
+# Other vendor dependency files remain excluded unless explicitly added.
 drivers/kerneldlls/*
 !drivers/.gitkeep
 !drivers/kerneldlls/.gitkeep

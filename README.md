@@ -19,7 +19,7 @@ Windows 上使用創芯科技、周立功 ControlCAN 相容 USB-CAN 轉接器的
 - 供應商提供的 `ControlCAN.dll` 與其相依 DLL。
 - Python 與 `ControlCAN.dll` 必須同為 32 位元或同為 64 位元。
 
-請勿將供應商 DLL 加入 Git。專案的 `.gitignore` 已排除這些二進位檔。
+已驗證的 `drivers/ControlCAN.dll` 會隨專案版本控制。其他供應商相依 DLL 預設仍不會加入 Git，除非已確認其授權允許散布且專案明確需要。
 
 ## 安裝與啟動
 
